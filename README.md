@@ -121,6 +121,10 @@ public DataContext()
 
 Use o método Include para carregar propriedades complextas quando necessário:
 ```c#
+using System.Data.Entity;
+
+...
+
 var employees = context.Employees.Include(e => e.HistoryDepartments)
                          .Include(e => e.HistoryDepartments.Select(h => h.Department))
                          .ToArray();
