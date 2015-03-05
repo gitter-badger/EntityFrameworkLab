@@ -218,6 +218,13 @@ if (!String.IsNullOrWhiteSpace(departmentName))
 var result = query.ToArray();
 ```
 
+Utilize default nullables para consultas que retornam Max ou Min afim de evitar problemas quando não retornam nenhum resultado.
+
+```c#
+var minStartDate = context.Employees.SelectMany(e => e.HistoryDepartments)
+                       		    .Min(h => (DateTime?)h.StartDate) ?? DateTime.Today;
+```
+
 ### Escrita
 Exemplo de como realizar um simples update:
 ```c#
