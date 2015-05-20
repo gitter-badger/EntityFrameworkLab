@@ -1,5 +1,7 @@
 # Entity Framework Lab
 
+[![Join the chat at https://gitter.im/ITLab-Academy/EntityFrameworkLab](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ITLab-Academy/EntityFrameworkLab?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ### Introdução
 Abaixo se encontra uma série de dicas sobre Entity Framework (versão 6 ou superior), todos utilizando como base de dados [AdventureWorks](http://msftdbprodsamples.codeplex.com/).
 
